@@ -31,3 +31,41 @@
     </thead>
     <tbody></tbody>
 </table>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" hidden>
+                <label class="control-label">ProductName</label>
+                <input id="frm_ProductId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">ProductName</label>
+                <input id="frm_ProductName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">UnitPrice</label>
+                <input id="frm_UnitPrice" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">UnitsInStock</label>
+                <input id="frm_UnitsInStock" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Image</label>
+                <input id="frm_Image" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Category</label>
+                <select id="frm_CategoryId" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" onclick="postData()" class="btn btn-primary" />
+                <input type="submit" value="Update" onclick="putData()" class="btn btn-primary" />
+                <input type="submit" value="Delete" onclick="deleteData()" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
